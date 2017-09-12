@@ -5,12 +5,27 @@ public class Pratos {
 	String descricao;
 	String nome;
 	
+	Ingrediente ingrediente;
+	
+	
+	
 	public Pratos(double preco, String nome) {
 		this.preco = preco;
 		this.nome = nome;
 		
 	}
-
+	
+	public void adicionarIngrediente(String  carne, String legume, String acomp){
+		
+	ingrediente	= new Ingrediente(carne);
+	ingrediente.setLegume(legume);
+	ingrediente.setAcompanhamento(acomp);
+		
+	}
+	
+	
+	
+	
 	public double getPreco() {
 		return preco;
 	}
